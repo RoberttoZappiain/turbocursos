@@ -5,7 +5,9 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {backgroundImage: (theme) => ({
+        dunes: "url('../public/images/backrounds.jpge')",
+      }),},
   },
   plugins: [],
 }
