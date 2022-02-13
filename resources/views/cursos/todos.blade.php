@@ -1,11 +1,3 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
 <body>
     <div class="m-5">
         <a href="#" class="flex flex-col  items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
@@ -107,6 +99,3 @@
         </a>
     </div>
 <body>
-
-
-</html>

@@ -6,7 +6,7 @@
         <ol class="inline-flex items-center space-x-1 md:space-x-3 ml-5 ">
             {{-- LISTA QUE INDICA PAGINA PRINCIPAL EN BREADCRUMB --}}
             <li class="inline-flex items-center">
-                <a href="#" class="inline-flex items-center font-italic text-sm text-gray-200 hover:text-gray-500 ">
+                <a href="/" class="inline-flex items-center font-italic text-sm text-gray-200 hover:text-gray-500 ">
                     <svg class="mr-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -27,19 +27,19 @@
                     {{-- DEPENDE LA VIEW QUE ELIGA SE MUESTRA LA SEGUNDA SECCION DEL BREADCRUMB --}}
                     @switch($nombre)
                         @case('contacto')
-                            <span class="ml-1 text-sm font-italic text-gray-100 md:ml-2 "> Contacto
-                            </span>
+                            <a href="{{ URL::route('contacto') }}"class="ml-1 text-sm font-italic text-gray-100 md:ml-2 ">
+                            </a>
                         @break
                         @case('servicio')
-                            <span class="ml-1 text-sm font-italic text-gray-100 md:ml-2 "> Servicios
-                            </span>
+                        <a href="{{ URL::route('servicio') }}"class="ml-1 text-sm font-italic text-gray-100 md:ml-2 ">
+                        </a>
                         @break
-                        @case('contacto')
+                        @case('curso')
 
                         @break
                         @default
-                        <span class="ml-1 text-sm font-italic text-gray-100 md:ml-2 "> Cursos
-                        </span>
+                        <a href="/" class="ml-1 text-sm font-italic text-gray-100 md:ml-2 "> Todos los cursos
+                        </a>
                     @endswitch
 
 

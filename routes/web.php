@@ -58,6 +58,11 @@ Route::get('tecnologias', function () {
 Route::get('teoriamusical', function () {
     return view('components/breadcrumb', ['nombre' => 'teoriamusical']);
 })->name('teoriamusical');
+
+
+Route::get('todos', function () {
+    return view('components/breadcrumb', ['nombre' => 'todos']);
+})->name('todos');
 //
 
 //RUTA CARPETA Servicios

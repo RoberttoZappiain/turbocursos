@@ -4,7 +4,7 @@
 
 <nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="#" class="flex">
+        <a href="/" class="flex">
             <span class="m-5 self-center text-lg font-semibold whitespace-nowrap text-white">Turbo Cursos</span>
         </a>
         <div class="flex md:order-2">
@@ -29,7 +29,7 @@
         <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-4">
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 <li>
-                    <a href="#"
+                    <a href="/"
                         class="block py-2 pr-4 pl-3 text-white bg-blue-900 rounded md:bg-transparent md:text-blue-900 md:p-0"
                         aria-current="page">Pagina Principal</a>
                 </li>
@@ -89,6 +89,8 @@
                                 <a href="{{ URL::route('automotriz') }}"
                                     class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Automotriz</a>
                             </li>
+
+
                         </ul>
 
                     </div>
