@@ -18,8 +18,8 @@
                 </div>
             </a>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap">
 
+        <div class="flex flex-wrap md:flex-nowrap">
         <div class="m-5">
             <a href="#"
                 class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
@@ -38,6 +38,7 @@
                 </div>
             </a>
         </div>
+
         <div class="m-5">
             <a href="#"
                 class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
@@ -52,6 +53,7 @@
                 </div>
             </a>
         </div>
-    </div>
+
+        </div>
     </div>
 </body>

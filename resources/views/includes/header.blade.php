@@ -100,10 +100,20 @@
                     <a href="{{ URL::route('servicio') }}"
                         class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Servicios</a>
                 </li>
+
                 {{-- //BOTON VIEW CONTACTO --}}
                 <li>
                     <a href="{{ URL::route('contacto') }}"
                         class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-70 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contacto</a>
+                </li>
+
+                <li>
+                    <a href="{{ URL::route('servicio') }}"
+                        class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Servicios</a>
+                </li>
+                <li>
+                    <a href="{{ URL::route('sitemap') }}"
+                        class="block py-2 pr-4 pl-3 text-gray-100 border-b border-gray-100 hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Mapa del sitio</a>
                 </li>
             </ul>
         </div>
@@ -112,13 +122,13 @@
         <div class="">
             <div class=" flex justify-center items-center p-4">
                 <div class="relative search-input">
-                    <a href="" target = "_blank" hidden></a>
+                    <a href="" target="_blank" hidden></a>
                     <input id="inptsearch" type="text"
                         class="h-14 w-96 pr-8 pl-5 rounded z-0 focus:shadow focus:outline-none"
                         placeholder="Busca cualquier curso...">
-                        <div class="bg-white autocom-box ">
+                    <div class="bg-white autocom-box ">
 
-                        </div>
+                    </div>
                     <div class="absolute mt-3 icon"> <svg class="w-6 h-6" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -128,79 +138,79 @@
             </div>
         </div>
         <script>
-        const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
-const suggBox = searchWrapper.querySelector(".autocom-box");
-const icon = searchWrapper.querySelector(".icon");
-let linkTag = searchWrapper.querySelector("a");
-let webLink;
+            const searchWrapper = document.querySelector(".search-input");
+            const inputBox = searchWrapper.querySelector("input");
+            const suggBox = searchWrapper.querySelector(".autocom-box");
+            const icon = searchWrapper.querySelector(".icon");
+            let linkTag = searchWrapper.querySelector("a");
+            let webLink;
 
-// if user press any key and release
-inputBox.onkeyup = (e)=>{
-    let userData = e.target.value; //user enetered data
-    let emptyArray = [];
-    if(userData){
-        icon.onclick = ()=>{
-            webLink = "http://turbocursos.herokuapp.com/" + userData;
-            linkTag.setAttribute("href", webLink);
-            console.log(webLink);
-            linkTag.click();
-        }
-        emptyArray = suggestions.filter((data)=>{
-            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
-            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
-        });
-        emptyArray = emptyArray.map((data)=>{
-            // passing return data inside li tag
-            return data = '<li>'+ data +'</li>';
-        });
-        searchWrapper.classList.add("active"); //show autocomplete box
-        showSuggestions(emptyArray);
-        let allList = suggBox.querySelectorAll("li");
-        for (let i = 0; i < allList.length; i++) {
-            //adding onclick attribute in all li tag
-            allList[i].setAttribute("onclick", "select(this)");
-        }
-    }else{
-        searchWrapper.classList.remove("active"); //hide autocomplete box
-    }
-}
+            // if user press any key and release
 
-function select(element){
-    let selectData = element.textContent;
-    inputBox.value = selectData;
-    icon.onclick = ()=>{
-        webLink = "http://turbocursos.herokuapp.com/" + selectData;
-        linkTag.setAttribute("href", webLink);
-        linkTag.click();
-    }
-    searchWrapper.classList.remove("active");
-}
+            inputBox.onkeyup = (e) => {
+                let userData = e.target.value; //user enetered data
+                let emptyArray = [];
+                if (userData) {
+                    icon.onclick = () => {
+                        webLink = "http://turbocursos.herokuapp.com/" + userData;
+                        linkTag.setAttribute("href", webLink);
+                        console.log(webLink);
+                        linkTag.click();
+                    }
+                    emptyArray = suggestions.filter((data) => {
+                        //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+                        return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+                    });
+                    emptyArray = emptyArray.map((data) => {
+                        // passing return data inside li tag
+                        return data = '<li>' + data + '</li>';
+                    });
+                    searchWrapper.classList.add("active"); //show autocomplete box
+                    showSuggestions(emptyArray);
+                    let allList = suggBox.querySelectorAll("li");
+                    for (let i = 0; i < allList.length; i++) {
+                        //adding onclick attribute in all li tag
+                        allList[i].setAttribute("onclick", "select(this)");
+                    }
+                } else {
+                    searchWrapper.classList.remove("active"); //hide autocomplete box
+                }
+            }
 
-function showSuggestions(list){
-    let listData;
-    if(!list.length){
-        userValue = inputBox.value;
-        listData = '<li>'+ userValue +'</li>';
-    }else{
-        listData = list.join('');
-    }
-    suggBox.innerHTML = listData;
-}
+            function select(element) {
+                let selectData = element.textContent;
+                inputBox.value = selectData;
+                icon.onclick = () => {
+                    webLink = "http://turbocursos.herokuapp.com/" + selectData;
+                    linkTag.setAttribute("href", webLink);
+                    linkTag.click();
+                }
+                searchWrapper.classList.remove("active");
+            }
 
-let suggestions = [
-    "automotriz",
-    "cableadoredes",
-    "carpinteria",
-     "diseno digital",
-    "estructuras metalicas",
-    "jardineria",
-    "salud mental",
-    "sexualidad",
-    "tecnologias",
-    "teoria musical",
-];
+            function showSuggestions(list) {
+                let listData;
+                if (!list.length) {
+                    userValue = inputBox.value;
+                    listData = '<li>' + userValue + '</li>';
+                } else {
+                    listData = list.join('');
+                }
+                suggBox.innerHTML = listData;
+            }
 
+            let suggestions = [
+                "automotriz",
+                "cableadoredes",
+                "carpinteria",
+                "diseno digital",
+                "estructuras metalicas",
+                "jardineria",
+                "salud mental",
+                "sexualidad",
+                "tecnologias",
+                "teoria musical",
+            ];
         </script>
         {{-- <div class="">
             <div class="">

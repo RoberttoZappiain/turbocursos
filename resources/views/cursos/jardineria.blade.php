@@ -40,18 +40,18 @@
                 </div>
             </a>
         </div>
-        <div class="m-5">
+        <div class="m-5 columns-3 ">
             <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
-                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/w87YhsmjNPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="w-full aspect-video "  src="https://www.youtube.com/embed/w87YhsmjNPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">  </h5>
                     <p class="mb-3 font-normal text-gray-700 "> </p>
                 </div>
             </a>
         </div>
-        <div class="m-5">
+        <div class="m-5 columns-3 ">
             <a href="#" class="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 ">
-                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/NJ_WF3cV4i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="w-full aspect-video " src="https://www.youtube.com/embed/NJ_WF3cV4i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">  </h5>
                     <p class="mb-3 font-normal text-gray-700 "> </p>

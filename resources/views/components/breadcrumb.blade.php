@@ -108,6 +108,10 @@
                 @include('contacto.contacto')
 
             @break
+            @case('sitemap')
+                @include('sitemap.sitemap')
+
+            @break
 
             @default
                 <span class="status"></span>

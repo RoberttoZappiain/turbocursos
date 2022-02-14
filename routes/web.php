@@ -69,7 +69,9 @@ Route::get('todos', function () {
 Route::get('servicio', function () {
     return view('components/breadcrumb', ['nombre' => 'servicio']);
 })->name('servicio');
-
+Route::get('sitemap', function () {
+    return view('components/breadcrumb', ['nombre' => 'sitemap']);
+})->name('sitemap');
 //RUTA CARPETA contacto
 Route::get('contacto', function () {
     return view('components/breadcrumb', ['nombre' => 'contacto']);
