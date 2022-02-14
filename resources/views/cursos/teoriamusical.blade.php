@@ -1,4 +1,6 @@
-
+<head>
+    <title>Curso de teoriamusical</title>
+</head>
 <body>
 
     <div class="mt-5">

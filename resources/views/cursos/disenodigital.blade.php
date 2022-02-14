@@ -1,3 +1,6 @@
+<head>
+    <title>Curso de diseno digital</title>
+</head>
 <body>
     <div class=" mt-5">
         <div class="">

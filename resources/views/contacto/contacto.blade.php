@@ -1,3 +1,6 @@
+<head>
+    <title>Formulario de contacto</title>
+</head>
 <form class="m-4">
     <div class="mb-6">
         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Tu email</label>

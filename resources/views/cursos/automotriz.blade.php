@@ -1,3 +1,1 @@
-<div class="h-11">
-
-</div>
+@include('errors.500')

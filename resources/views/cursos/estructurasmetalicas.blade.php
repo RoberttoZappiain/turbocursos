@@ -1,3 +1,6 @@
+<head>
+    <title>Curso de estructuras metalicas</title>
+</head>
 <body>
     <div class="mt-5">
         <div class="m-5">

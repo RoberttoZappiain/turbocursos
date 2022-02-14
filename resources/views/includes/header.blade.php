@@ -141,7 +141,7 @@ inputBox.onkeyup = (e)=>{
     let emptyArray = [];
     if(userData){
         icon.onclick = ()=>{
-            webLink = "https://www.google.com/search?q=" + userData;
+            webLink = "http://turbocursos.herokuapp.com/" + userData;
             linkTag.setAttribute("href", webLink);
             console.log(webLink);
             linkTag.click();
@@ -170,7 +170,7 @@ function select(element){
     let selectData = element.textContent;
     inputBox.value = selectData;
     icon.onclick = ()=>{
-        webLink = "https://www.google.com/search?q=" + selectData;
+        webLink = "http://turbocursos.herokuapp.com/" + selectData;
         linkTag.setAttribute("href", webLink);
         linkTag.click();
     }

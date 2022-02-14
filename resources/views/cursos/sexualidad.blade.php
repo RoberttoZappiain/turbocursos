@@ -1,5 +1,7 @@
+<head>
+    <title>Curso de sexualidad</title>
+</head>
 <body>
-
     <div class=" mt-5">
         <div class="">
             <a href="#"

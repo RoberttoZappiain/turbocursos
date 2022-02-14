@@ -1,3 +1,6 @@
+<head>
+    <title>Servicios</title>
+</head>
 <body>
     <div class="w-9/12 m-auto py-16 min-h-screen flex items-center justify-center">
         <div class=" shadow overflow-hidden sm:rounded-lg ">

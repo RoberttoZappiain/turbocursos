@@ -34,9 +34,7 @@
                         <a href="{{ URL::route('servicio') }}"class="ml-1 text-sm font-italic text-gray-100 md:ml-2 ">
                         </a>
                         @break
-                        @case('curso')
 
-                        @break
                         @default
                         <a href="/" class="ml-1 text-sm font-italic text-gray-100 md:ml-2 "> Todos los cursos
                         </a>
@@ -46,6 +44,7 @@
 
                 </div>
             </li>
+
             <li aria-current="page">
                 <div class="flex items-center">
                     <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20"

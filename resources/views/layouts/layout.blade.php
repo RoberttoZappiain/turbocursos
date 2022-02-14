@@ -3,8 +3,9 @@
 <html>
 <head>
     @include('includes.head')
+    <title>Pagina principal</title>
 </head>
-<body  class="bg-cover " style="background-image: url('https://www.matichon.co.th/wp-content/uploads/2021/09/01-76.jpg')"></div>
+<body  class="bg-cover " style="background-image: url('https://www.matichon.co.th/wp-content/uploads/2021/09/01-76.jpg')">
 
 <div class="">
 

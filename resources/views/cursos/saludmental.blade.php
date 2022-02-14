@@ -1,3 +1,6 @@
+<head>
+    <title>Curso de salud mental</title>
+</head>
 <body>
     <div class="m-5 ">
         <div class="">
